@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "website",
+      "script": "./srv/index.js",
+      "env": {
+        "watch": true,
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "watch": false,
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

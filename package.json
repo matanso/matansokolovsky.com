@@ -1,0 +1,26 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.9.0",
+    "eslint": "latest",
+    "eslint-plugin-fp": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-standard": "latest",
+    "eslint-config-standard": "latest"
+  },
+  "dependencies": {
+    "config": "^1.25.1",
+    "express": "latest",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "start": "pm2 start process.json && react-scripts start > /dev/null",
+    "start:production": "npm run build && pm2 start process.json --env production",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
