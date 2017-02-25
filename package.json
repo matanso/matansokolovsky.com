@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "pm2 start process.json && react-scripts start > /dev/null",
-    "start:production": "yarn run build && pm2 start process.json --env production",
+    "start:production": "pm2 start process.json --env production",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
