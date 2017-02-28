@@ -5,7 +5,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        This is a work in progress
+        <form action="/api/login" method="POST">
+          <input type="text" name="username"/>
+          <input type="password" name="password"/>
+          <input type="submit" value="submit"/>
+        </form>
       </div>
     );
   }

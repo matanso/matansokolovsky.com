@@ -1,6 +1,13 @@
 {
   "app": {
     "port": 3005,
+    "secret": "sfgw4oik90gfgj89ifk4fkfklxmfw4eo9k",
+    "domain": "web.example.com"
+  },
+  "mongodb": {
+    "url": "mongodb://127.0.0.1/Chat"
+  },
+  "api": {
     "version": "0.0.2"
   }
 }
